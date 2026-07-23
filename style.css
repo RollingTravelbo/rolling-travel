@@ -24,14 +24,17 @@ header {
 }
 
 .logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #e30613;
-    .logo img {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
     width: 90px;
     height: auto;
 }
-}
+
+
+/* Menú */
 
 nav ul {
     display: flex;
@@ -49,6 +52,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #e30613;
 }
+
 
 /* Sección principal */
 
@@ -75,6 +79,9 @@ nav ul li a:hover {
     font-size: 22px;
     margin-top: 15px;
 }
+
+
+/* Botones */
 
 .btn {
     display: inline-block;
@@ -106,7 +113,7 @@ section h2 {
 }
 
 
-/* Tarjetas destinos */
+/* Tarjetas de destinos */
 
 .cards {
     display: flex;
@@ -164,17 +171,21 @@ footer {
 
 @media(max-width:768px){
 
-header {
-    flex-direction: column;
-}
+    header {
+        flex-direction: column;
+    }
 
-nav ul {
-    margin-top: 20px;
-    flex-direction: column;
-}
+    nav ul {
+        margin-top: 20px;
+        flex-direction: column;
+    }
 
-.hero h1 {
-    font-size: 35px;
-}
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .logo img {
+        width: 70px;
+    }
 
 }
